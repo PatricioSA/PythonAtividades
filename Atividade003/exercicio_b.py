@@ -4,8 +4,15 @@
 #Término: 28/10/2021
 #Atividade003 - Exercício b
 
+from datetime import date
+
+import os
+
+
+os.system('cls')
+
 #Entrada de dados
-anoAtual = 2021
+anoAtual = date.today().year
 anoNascimento = int(input('Digite seu ano de nascimento: '))
 
 #operações
