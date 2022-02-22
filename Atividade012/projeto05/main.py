@@ -16,18 +16,18 @@ triangulo = Triangulo
 triangulo2 = Triangulo
 
 #entrada de dados
-ladoUm = int(input('Digite o valor do 1º segmento: '))
-ladoDois = int(input('Digite o valor do 2º segmento: '))
-ladoTres = int(input('Digite o valor do 3º segmento: '))
+ladoA = int(input('Digite o valor do 1º segmento: '))
+ladoB = int(input('Digite o valor do 2º segmento: '))
+ladoC = int(input('Digite o valor do 3º segmento: '))
 
 #condição existencia
-resultado1 = triangulo.condicao_existencia(ladoUm, ladoDois, ladoTres)
+resultado1 = triangulo.condicao_existencia(ladoA, ladoB, ladoC)
 
 #perímetro
-resultado2 = triangulo.perimetro(ladoUm, ladoDois, ladoTres)
+resultado2 = triangulo.perimetro(ladoA, ladoB, ladoC)
 
 #Saída
 os.system('cls')
 print('-'*60)
-print(f'Os segmentos {ladoUm}, {ladoDois}, {ladoTres} {resultado1}')
+print(f'Os segmentos {ladoA}, {ladoB}, {ladoC} {resultado1}')
 print(f'O perímetro é {resultado2}')
