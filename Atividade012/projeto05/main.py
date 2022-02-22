@@ -4,7 +4,6 @@
 #Término: 11/02/2021
 #Atividade012
 
-from cgi import test
 import os
 
 from triangulo import Triangulo

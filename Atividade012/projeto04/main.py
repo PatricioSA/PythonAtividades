@@ -6,7 +6,8 @@
 
 import os
 
-from salario import Salario
+from salario import Funcionario
+
 
 os.system('cls')
 
@@ -14,12 +15,13 @@ print('-'*30)
 print('CÁLCULO DE AUMENTO DE SALÁRIO ')
 print('-'*30)
 
-#
-salario1 = Salario
+#instanciando
+pedro = Funcionario('Pedro Alves', 42, 900)
 
-#Entrada de dados
-valor = float(input('Digite o salário: '))
-
-salario1.aumento(valor)
-
-print(salario1)
+#Saída
+print(f'Nome: {pedro.nome}')
+print(f'Idade: {pedro.idade}')
+print(f'Salário: {pedro.salario}')
+print('-'*30)
+print(f'Salário Novo:') 
+pedro.aumento(900)
